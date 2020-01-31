@@ -13,6 +13,7 @@
     <Name>PythonBasics</Name>
     <RootNamespace>PythonBasics</RootNamespace>
     <InterpreterId>MSBuild|pylearn-env|$(MSBuildProjectFullPath)</InterpreterId>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,6 +33,36 @@
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
       <Architecture>X64</Architecture>
     </Interpreter>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="booleans.py" />
+    <Compile Include="comprehensions.py" />
+    <Compile Include="conditions.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dictionaries.py" />
+    <Compile Include="files.py" />
+    <Compile Include="guessing_game.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lists.py" />
+    <Compile Include="loops.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="numbers.py" />
+    <Compile Include="practice.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="random_numbers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sets.py" />
+    <Compile Include="strings.py" />
+    <Compile Include="tuples.py" />
+    <Compile Include="variables.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
