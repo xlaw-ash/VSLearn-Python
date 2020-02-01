@@ -31,4 +31,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', HelloDjango.views.index, name='index'),
     url(r'^home$', HelloDjango.views.index, name='home'),
+    url(r'^guide$', HelloDjango.views.guide, name='guide')
 ]

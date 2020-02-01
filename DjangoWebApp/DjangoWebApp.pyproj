@@ -64,10 +64,13 @@
     <Folder Include="DjangoWebApp\" />
     <Folder Include="HelloDjango\" />
     <Folder Include="HelloDjango\migrations\" />
+    <Folder Include="HelloDjango\static\" />
     <Folder Include="HelloDjango\templates\" />
     <Folder Include="HelloDjango\templates\HelloDjango\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HelloDjango\static\site.css" />
+    <Content Include="HelloDjango\templates\HelloDjango\guide.html" />
     <Content Include="HelloDjango\templates\HelloDjango\index.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
