@@ -5,6 +5,7 @@
     <Name>DjangoWebApp</Name>
     <RootNamespace>DjangoWebApp</RootNamespace>
     <InterpreterId>MSBuild|pylearn-env|$(MSBuildProjectFullPath)</InterpreterId>
+    <TestFramework>Pytest</TestFramework>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -37,6 +38,13 @@
     <Compile Include="app\views.py" />
     <Compile Include="app\__init__.py" />
     <Compile Include="app\migrations\__init__.py" />
+    <Compile Include="HelloDjango\admin.py" />
+    <Compile Include="HelloDjango\apps.py" />
+    <Compile Include="HelloDjango\migrations\__init__.py" />
+    <Compile Include="HelloDjango\models.py" />
+    <Compile Include="HelloDjango\tests.py" />
+    <Compile Include="HelloDjango\views.py" />
+    <Compile Include="HelloDjango\__init__.py" />
     <Compile Include="manage.py" />
     <Compile Include="DjangoWebApp\__init__.py" />
     <Compile Include="DjangoWebApp\settings.py" />
@@ -54,8 +62,13 @@
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
     <Folder Include="DjangoWebApp\" />
+    <Folder Include="HelloDjango\" />
+    <Folder Include="HelloDjango\migrations\" />
+    <Folder Include="HelloDjango\templates\" />
+    <Folder Include="HelloDjango\templates\HelloDjango\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HelloDjango\templates\HelloDjango\index.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />
