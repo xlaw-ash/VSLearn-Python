@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>{{ title }}</title>
+    {% load staticfiles %} <!-- Instruct Django to add static files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
+</head>
+
+<body>
+
+    <h1 class="greeting">{{ heading }}</h1>
+    <strong class="content">Today's Date:</strong> <span class="content">{{ date }}</span><br />
+    <a href="guide">Learn Django with Visual Studio</a>
+</body>
+</html>

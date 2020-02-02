@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>{{ title }}</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
+</head>
+<body>
+    <h1 class="greeting">{{ heading }}</h1>
+    <span class="content">
+        {% for name, link in content.items %}
+            <a href="{{ link }}">{{ name }}</a><br />
+        {% endfor %}
+    </span>
+    <a href="home">Go Back</a>
+</body>
+</html>
